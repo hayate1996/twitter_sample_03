@@ -13,6 +13,7 @@
 		F9BB55401B80AC0D008D3323 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9BB553F1B80AC0D008D3323 /* Images.xcassets */; };
 		F9BB55431B80AC0D008D3323 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9BB55411B80AC0D008D3323 /* LaunchScreen.xib */; };
 		F9BB554F1B80AC0D008D3323 /* twitter_sampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BB554E1B80AC0D008D3323 /* twitter_sampleTests.swift */; };
+		F9BB55591B80B080008D3323 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BB55581B80B080008D3323 /* TimelineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		F9BB55481B80AC0D008D3323 /* twitter_sampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = twitter_sampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9BB554D1B80AC0D008D3323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9BB554E1B80AC0D008D3323 /* twitter_sampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twitter_sampleTests.swift; sourceTree = "<group>"; };
+		F9BB55581B80B080008D3323 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimelineViewController.swift; path = ../TimelineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				F9BB55381B80AC0D008D3323 /* AppDelegate.swift */,
 				F9BB553A1B80AC0D008D3323 /* ViewController.swift */,
+				F9BB55581B80B080008D3323 /* TimelineViewController.swift */,
 				F9BB553C1B80AC0D008D3323 /* Main.storyboard */,
 				F9BB553F1B80AC0D008D3323 /* Images.xcassets */,
 				F9BB55411B80AC0D008D3323 /* LaunchScreen.xib */,
@@ -214,6 +217,7 @@
 			files = (
 				F9BB553B1B80AC0D008D3323 /* ViewController.swift in Sources */,
 				F9BB55391B80AC0D008D3323 /* AppDelegate.swift in Sources */,
+				F9BB55591B80B080008D3323 /* TimelineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
