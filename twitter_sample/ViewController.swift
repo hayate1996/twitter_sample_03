@@ -10,12 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var loginButton: UIButton!
-    let accountsList:[Dictionary<String,String>] = [["name":"Account AAA"], ["name":"Account BBB"], ["name":"Account CCC"]]
+    @IBOutlet var loginButton: UIButton!
+    var accountsList:[Dictionary<String,String>]?
+    var tweets:[Dictionary<String, AnyObject>]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        accountsList = [["name":"Account AAA"], ["name":"Account BBB"], ["name":"Account CCC"]]
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,9 +34,11 @@ class ViewController: UIViewController {
             self.performSegueWithIdentifier("segueTimelineViewController", sender: nil)
         }
 
-        for account in accountsList as [Dictionary<String, String>] {
-            let action = UIAlertAction(title: account["name"]!, style: .Default, handler: selectAction)
-            accountSelectionSheet.addAction(action)
+        if let accounts:[Dictionary<String, String>] = accountsList{
+            for account in accounts {
+                let action = UIAlertAction(title: account["name"]!, style: .Default, handler: selectAction)
+                accountSelectionSheet.addAction(action)
+            }
         }
 
         let CanceledAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)

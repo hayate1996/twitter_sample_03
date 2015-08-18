@@ -10,13 +10,8 @@ import UIKit
 
 class TimelineViewController: UITableViewController, UITableViewDelegate, UITableViewDataSource {
 
-    required init!(coder aDecoder: NSCoder!) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
-    override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    }
+    let cellIdentifier = "tweetCell"
+    var tweets:[Dictionary<String, AnyObject>]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +21,15 @@ class TimelineViewController: UITableViewController, UITableViewDelegate, UITabl
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+
+        tweets = [  ["name": "Account AAA", "description": "My name is AAA", "icon":"twitter_icon"],
+                    ["name": "Account BBB", "description": "My name is BBB", "icon":"twitter_icon"],
+                    ["name": "Account CCC", "description": "My name is CCC", "icon":"twitter_icon"],
+                    ["name": "Account BBB", "description": "How old are you, CCC?", "icon":"twitter_icon"],
+                    ["name": "Account CCC", "description": "My old is 17.", "icon":"twitter_icon"]]
+
+//        var tweetCell = UITableViewCell(style: .Subtitle, reuseIdentifier: cellIdentifier)
+//        tableView.registerClass(tweetCell.dynamicType, forCellReuseIdentifier: cellIdentifier)
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,21 +42,38 @@ class TimelineViewController: UITableViewController, UITableViewDelegate, UITabl
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
+
+        if let tweetsList = tweets {
+            return tweetsList.count
+        }
+
         return 0
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
+        var aCell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as? UITableViewCell
 
         // Configure the cell...
+        if aCell == nil {
+            aCell = UITableViewCell(style: .Subtitle, reuseIdentifier: cellIdentifier)
+        }
+
+        var cell = aCell!
+        cell.imageView?.image = UIImage(named: (tweets![indexPath.row]["icon"] as? String)!)
+        cell.textLabel?.text = tweets![indexPath.row]["description"] as? String
+        cell.detailTextLabel?.text = tweets![indexPath.row]["name"] as? String
 
         return cell
+    }
+
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 50.0
     }
 
 }
