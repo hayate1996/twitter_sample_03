@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        accountsList = [["name":"Account AAA"], ["name":"Account BBB"], ["name":"Account CCC"]]
+        accountsList = [["name":"Hiro"], ["name":"Account BBB"], ["name":"Account CCC"]]
     }
 
     override func didReceiveMemoryWarning() {

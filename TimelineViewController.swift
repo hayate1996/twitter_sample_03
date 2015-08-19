@@ -22,7 +22,7 @@ class TimelineViewController: UITableViewController, UITableViewDelegate, UITabl
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
 
-        tweets = [  ["name": "Account AAA", "description": "My name is AAA", "icon":"user_a_icon"],
+        tweets = [  ["name": "Hiro", "description": "My name is AAA", "icon":"twitter_icon"],
                     ["name": "Account BBB", "description": "My name is BBB", "icon":"user_b_icon"],
                     ["name": "Account CCC", "description": "My name is CCC", "icon":"user_c_icon"],
                     ["name": "Account BBB", "description": "How old are you, CCC?", "icon":"user_b_icon"],
