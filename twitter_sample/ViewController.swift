@@ -12,7 +12,6 @@ class ViewController: UIViewController {
 
     @IBOutlet var loginButton: UIButton!
     var accountsList:[Dictionary<String,String>]?
-    var tweets:[Dictionary<String, AnyObject>]?
 
     // ログイン画面のローディング(ライフサイクルメソッド)
     override func viewDidLoad() {
