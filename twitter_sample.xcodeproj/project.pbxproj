@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F90107BF1B87007600BB6E11 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90107BE1B87007600BB6E11 /* TimelineViewController.swift */; };
+		F976D9811B871B8A00C1BED7 /* TimelineDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F976D9801B871B8A00C1BED7 /* TimelineDetailViewController.swift */; };
 		F9BB55391B80AC0D008D3323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BB55381B80AC0D008D3323 /* AppDelegate.swift */; };
 		F9BB553B1B80AC0D008D3323 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BB553A1B80AC0D008D3323 /* ViewController.swift */; };
 		F9BB553E1B80AC0D008D3323 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9BB553C1B80AC0D008D3323 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		F90107BE1B87007600BB6E11 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		F976D9801B871B8A00C1BED7 /* TimelineDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineDetailViewController.swift; sourceTree = "<group>"; };
 		F9BB55331B80AC0D008D3323 /* twitter_sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twitter_sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9BB55371B80AC0D008D3323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9BB55381B80AC0D008D3323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,9 +81,10 @@
 		F9BB55351B80AC0D008D3323 /* twitter_sample */ = {
 			isa = PBXGroup;
 			children = (
-				F90107BE1B87007600BB6E11 /* TimelineViewController.swift */,
 				F9BB55381B80AC0D008D3323 /* AppDelegate.swift */,
 				F9BB553A1B80AC0D008D3323 /* ViewController.swift */,
+				F90107BE1B87007600BB6E11 /* TimelineViewController.swift */,
+				F976D9801B871B8A00C1BED7 /* TimelineDetailViewController.swift */,
 				F9BB553C1B80AC0D008D3323 /* Main.storyboard */,
 				F9BB553F1B80AC0D008D3323 /* Images.xcassets */,
 				F9BB55411B80AC0D008D3323 /* LaunchScreen.xib */,
@@ -217,6 +220,7 @@
 			files = (
 				F9BB553B1B80AC0D008D3323 /* ViewController.swift in Sources */,
 				F9BB55391B80AC0D008D3323 /* AppDelegate.swift in Sources */,
+				F976D9811B871B8A00C1BED7 /* TimelineDetailViewController.swift in Sources */,
 				F90107BF1B87007600BB6E11 /* TimelineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
