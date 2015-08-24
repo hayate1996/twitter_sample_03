@@ -16,13 +16,9 @@ class ViewController: UIViewController {
     // ログイン画面のローディング(ライフサイクルメソッド)
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-
-        println("Init Account List")
 
         // アカウントデータを配列に持たせる
-        accountsList = [["name":"Hiro"], ["name":"Account BBB"], ["name":"Account CCC"]]
-        println("Account List: \(accountsList)")
+        accountsList = [["name":"@ken"], ["name":"@jeff"], ["name":"@chris"]]
     }
 
     // メモリーが不足した時にOSから呼ばれる(ライフサイクルメソッド)
