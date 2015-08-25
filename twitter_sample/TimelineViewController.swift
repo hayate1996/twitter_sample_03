@@ -15,40 +15,26 @@ class TimelineViewController: UITableViewController, UITableViewDelegate, UITabl
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-
+        
         tweets = [  ["name": "Hiro", "description": "My name is AAA", "icon":"twitter_icon"],
                     ["name": "Account BBB", "description": "My name is BBB", "icon":"user_b_icon"],
                     ["name": "Account CCC", "description": "My name is CCC", "icon":"user_c_icon"],
                     ["name": "Account BBB", "description": "How old are you, CCC?", "icon":"user_b_icon"],
                     ["name": "Account CCC", "description": "My old is 17.", "icon":"user_c_icon"]]
-
-//        var tweetCell = UITableViewCell(style: .Subtitle, reuseIdentifier: cellIdentifier)
-//        tableView.registerClass(tweetCell.dynamicType, forCellReuseIdentifier: cellIdentifier)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
         return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
-
+        
         if let tweetsList = tweets {
             return tweetsList.count
         }
