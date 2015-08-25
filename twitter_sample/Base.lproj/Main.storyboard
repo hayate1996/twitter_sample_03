@@ -38,7 +38,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="tappedLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lca-ef-d6S"/>
+                                    <action selector="tappedLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hgi-iw-WBx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -94,10 +94,31 @@
                             <outlet property="delegate" destination="WYW-bU-SUC" id="Tj0-j1-rD6"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="8Mt-3K-YFw" kind="show" identifier="showTimelineDetailViewController" id="a8V-RR-G4Z"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XZu-Vp-ogB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1085" y="69"/>
+        </scene>
+        <!--Timeline Detail View Controller-->
+        <scene sceneID="LE5-SO-dTv">
+            <objects>
+                <viewController id="8Mt-3K-YFw" customClass="TimelineDetailViewController" customModule="twitter_sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gOJ-L0-PpP"/>
+                        <viewControllerLayoutGuide type="bottom" id="BGx-xu-Vy0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uuS-dM-XdK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yiP-ug-6sz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1085" y="763"/>
         </scene>
     </scenes>
 </document>
