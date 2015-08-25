@@ -35,8 +35,7 @@ class TimelineViewController: UITableViewController, UITableViewDelegate, UITabl
     // MARK: - Table view data source
     // テーブルが持つsectionの数を指定(UITableView ライフサイクルメソッド)
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
+        // Sectionは１つ
         return 1
     }
 
