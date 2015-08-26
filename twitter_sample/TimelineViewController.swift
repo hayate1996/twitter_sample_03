@@ -17,11 +17,20 @@ class TimelineViewController: UITableViewController, UITableViewDelegate, UITabl
     override func viewDidLoad() {
         super.viewDidLoad()
         // ツイートデータの初期化
-        tweets = [  ["name": "Hiro", "description": "My name is AAA", "icon":"twitter_icon"],
-                    ["name": "Account BBB", "description": "My name is BBB", "icon":"user_b_icon"],
-                    ["name": "Account CCC", "description": "My name is CCC", "icon":"user_c_icon"],
-                    ["name": "Account BBB", "description": "How old are you, CCC?", "icon":"user_b_icon"],
-                    ["name": "Account CCC", "description": "My old is 17.", "icon":"user_c_icon"]]
+        tweets = [  ["name": "Hiro", "description": "Hey! Going to be in Frisco in October. Was hoping to have a meeting to talk about @thinkwall if you're around?", "icon":"twitter_icon"],
+            ["name": "Jeff", "description": "Got the shirt @jasoncosta thanks man! Loving the #twitter bird on the shirt :-)", "icon":"user_b_icon"],
+            ["name": "Chris", "description": "Loving the #twitter bird on the shirt :-)", "icon":"user_c_icon"],
+            ["name": "Jeff", "description": "Was hoping to have a meeting to talk about @thinkwall if you're around?, CCC?", "icon":"user_b_icon"],
+            ["name": "Chris", "description": "My old is 17.", "icon":"user_c_icon"],
+            ["name": "Hiro", "description": "My name is Hiro", "icon":"user_c_icon"],
+            ["name": "Jeff", "description": "Got the shirt @jasoncosta thanks man!", "icon":"user_b_icon"],
+            ["name": "Chris", "description": "Loving the #twitter bird on the shirt :-)", "icon":"user_c_icon"],
+            ["name": "Jeff", "description": "How old are you, CCC?", "icon":"user_b_icon"],
+            ["name": "Chris", "description": "Loving the #twitter bird on the shirt :-)", "icon":"user_c_icon"],
+            ["name": "Hiro", "description": "Was hoping to have a meeting to talk about", "icon":"user_c_icon"],
+            ["name": "Jeff", "description": "Got the shirt @jasoncosta thanks man!", "icon":"user_b_icon"],
+            ["name": "Chris", "description": "Loving the #twitter bird on the shirt", "icon":"user_c_icon"]]
+
     }
 
     // メモリーが不足した時にOSから呼ばれる(ライフサイクルメソッド)
